@@ -1,8 +1,32 @@
 #header {
-    text-align: center;
+    font-family: 'Roboto Slab', serif;
 }
 
 body {
-    background-color: black;
-    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #a2d2ff;
+    color: #3f0137;
+    text-align: center;
+}
+
+#intro {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: left;
+}
+
+#about-me {
+}
+
+.role {
+    margin-bottom: 0;
+}
+
+.employer {
+    margin: 0;
+}
+
+.dates {
+    margin: 0;
+    font-weight: bold;
 }
