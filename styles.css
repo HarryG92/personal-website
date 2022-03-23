@@ -1,12 +1,46 @@
 #header {
     font-family: 'Roboto Slab', serif;
+    border-bottom: 2px solid white;
+}
+
+#header h1 {
+    text-align: left;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: 2em;
+}
+
+#header h2 {
+    text-align: left;
+    font-size: 1.3em;
+    margin-top: 5px;
+}
+
+#navbar a {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#name {
+    font-size: 1.5em;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.center-div {
+    text-align: center;
 }
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    background-color: #a2d2ff;
-    color: #3f0137;
+    background-color: black;
+    color: white;
     text-align: center;
+}
+
+#img-h {
+    border-radius: 50%;
+    margin: 20px 20px;
 }
 
 #intro {
