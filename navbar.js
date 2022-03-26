@@ -2,7 +2,7 @@ let navlinks = {
     "Home": "index.html",
     "Qualifications": "quals.html",
     "Work Experience": "work_experience.html",
-    "Coding Skills": "coding.html",
+    "Technical Skills": "technical.html",
     "Mathematics": "maths.html",
     "Fencing": "fencing.html"
 }
