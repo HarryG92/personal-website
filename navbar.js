@@ -10,8 +10,8 @@ let navlinks = {
 let path = window.location.pathname;
 let currentPage = path.split("/").pop();
 
-let width = screen.width;
-if (width < 2000) {
+let width = window.innerWidth;
+if (width < 1000) {
     condensedNavbar();
 } else {
     fullNavbar();
