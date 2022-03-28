@@ -9,12 +9,21 @@ let navlinks = {
 
 let path = window.location.pathname;
 let currentPage = path.split("/").pop();
+fitNavbar();
 
-let width = window.innerWidth;
-if (width < 1000) {
-    condensedNavbar();
-} else {
-    fullNavbar();
+window.addEventListener('resize', fitNavbar);
+
+function fitNavbar(event) {
+    let oldNavbar = document.getElementById("navbar");
+    if (oldNavbar != null) {
+        oldNavbar.remove();
+    }
+    let width = window.innerWidth;
+    if (width < 800) {
+        condensedNavbar();
+    } else {
+        fullNavbar();
+    }
 }
 
 function fullNavbar() {
