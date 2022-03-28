@@ -19,7 +19,7 @@ function fitNavbar(event) {
         oldNavbar.remove();
     }
     let width = window.innerWidth;
-    if (width < 800) {
+    if (width < 850) {
         condensedNavbar();
     } else {
         fullNavbar();

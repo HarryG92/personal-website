@@ -1,16 +1,15 @@
 html {
     margin: 0;
     height: 100%;
-    --background: #4763ff;
-    --maintext: #fbf5f3;
-    --accent: #ff8c42;
-    --important: #010f5b;
+    --mainback: #0A1128; /*#100412;*/
+    --accentback: #0A1128;
+    --maintext: #f2f2f2;
+    --accenttext: #fb3070;
 }
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    /* background-color: #262a42; */
-    background-image: linear-gradient(to bottom, var(--background) , #6c82ff);
+    background-color: var(--mainback);
     color: var(--maintext);
     text-align: justify;
 }
@@ -35,33 +34,35 @@ body {
 
 #navbar {
     text-align: center;
-    background-color: var(--background);
+    background-color: var(--mainback);
     width: 100%;
     /* height: 60px; */
     margin-left: auto;
     margin-right: auto;
-    border-bottom: 2px solid var(--maintext);
+    border-bottom: 2px solid var(--accenttext);
 }
 
 #navbar button {
-    background-color: var(--background);
-    color: var(--accent);
-    border: 2px solid var(--accent);
+    background-color: var(--accentback);
+    color: var(--accenttext);
+    border: 2px solid var(--accenttext);
     border-radius: 10px;
     /* height: 100%; */
     padding: 10px 10px;
     margin: 0 10px 10px 10px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.1em;
 }
 
 #navbar button:hover {
-    background-color: var(--accent);
+    background-color: var(--accenttext);
     border-color: var(--maintext);
-    color: var(--background);
+    color: var(--accentback);
 }
 
 #navbar button.current-page {
-    background-color: var(--important);
-    color: var(--accent);
+    background-color: var(--accentback);
+    color: var(--maintext);
     border-color: var(--maintext);
 }
 
@@ -70,8 +71,14 @@ body {
     width: 100%;
     border-width: 0;
     border-radius: 0;
-    background: var(--important);
+    background: var(--accenttext);
+    color: var(--accentback);
     margin: 0;
+}
+
+#dropdown button:hover {
+    color: var(--accenttext);
+    background-color: var(--accentback);
 }
 
 #dropdown.dropdown-reveal button {
@@ -81,7 +88,7 @@ body {
 div.menu-bar {
     width: 35px;
     height: 5px;
-    background-color: var(--important);
+    background-color: var(--accenttext);
     margin: 6px 0;
     display: block;
 }
@@ -94,10 +101,11 @@ div.menu-bar {
     display: block;
 }
 
-#name {
+.name {
     font-size: 1.5em;
     margin-left: 5px;
     margin-right: 5px;
+    color: var(--accenttext);
 }
 
 .center-div {
@@ -105,19 +113,45 @@ div.menu-bar {
 }
 
 a {
-    color: var(--accent);
+    color: var(--accenttext);
 }
 
 a:visited {
-
+    color: var(--important);
 }
 
 a:hover {
 
 }
 
-a:active {
+h1 {
+    color: var(--important);
+    text-align: center;
+}
 
+.qual {
+    border-bottom: 1px solid var(--important);
+}
+
+.qual ol {
+    margin-bottom: 0px;
+}
+
+.qual h1 {
+    color: var(--accenttext);
+    text-align: left;
+}
+
+.work-item {
+    padding-bottom: 5px;
+}
+
+.work-item h1 {
+    text-align: left;
+}
+
+.work-item h2 {
+    color: var(--accenttext);
 }
 
 #img-h {
@@ -129,9 +163,16 @@ a:active {
     font-size: 3em;
     font-weight: bold;
     text-align: left;
+    padding-top: 20px;
 }
 
 #about-me {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#header {
+    padding: 20px 0;
 }
 
 .role {
@@ -145,4 +186,12 @@ a:active {
 .dates {
     margin: 0;
     font-weight: bold;
+}
+
+.institution {
+    font-size: 0.9em;
+}
+
+.institution:before {
+    content: "TODO";
 }
