@@ -1,7 +1,9 @@
 # personal-website
 Code behind my personal website - currently under construction, not yet hosted
+Basic structure and styling now complete
 
 # TODO
-- Build basic HTML
-- Apply basic CSS styling
-- PLan further
+- Check accessibility
+- Test local serving
+- Find a hosting service
+- Deploy!
