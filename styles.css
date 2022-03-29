@@ -193,6 +193,10 @@ h1 {
     padding: 20px 0;
 }
 
+#header h1 {
+    color: var(--maintext);
+}
+
 .skill {
     color: var(--accenttext);
     font-size: 1.1em;
