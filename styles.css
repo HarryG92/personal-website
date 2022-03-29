@@ -1,10 +1,13 @@
 html {
     margin: 0;
     height: 100%;
-    --mainback: #0A1128; /*#100412;*/
-    --accentback: #0A1128;
+    --accentback: #0A1128; /*#100412;*/
+    --mainback: #0A1120;
     --maintext: #f2f2f2;
     --accenttext: #fb3070;
+    --link: #57acdc;
+    --titlefont: 'Roboto slab';
+    --mainfont: 'Source sans pro';
 }
 
 body {
@@ -15,7 +18,7 @@ body {
 }
 
 #header {
-    font-family: 'Roboto Slab', serif;
+    font-family: var(--titlefont), serif;
     border-bottom: 2px solid white;
 }
 
@@ -50,7 +53,7 @@ body {
     /* height: 100%; */
     padding: 10px 10px;
     margin: 0 10px 10px 10px;
-    font-family: 'Roboto Slab', serif;
+    font-family: var(--titlefont), serif;
     font-size: 1.1em;
 }
 
@@ -112,38 +115,49 @@ div.menu-bar {
     text-align: center;
 }
 
-a {
+a:not(.internal) {
+    color: var(--link);
+}
+
+/* a:visited {
+    color: var(--accenttext);
+} */
+
+a:hover:not(.internal) {
     color: var(--accenttext);
 }
 
-a:visited {
-    color: var(--important);
-}
-
-a:hover {
-
-}
-
 h1 {
-    color: var(--important);
+    color: var(--accenttext);
     text-align: center;
 }
 
+.qual-section {
+    padding: 20px 0;
+}
+
+.qual-section h1:first-child {
+    font-family: var(--titlefont), serif;
+    color: var(--maintext);
+}
+
 .qual {
-    border-bottom: 1px solid var(--important);
+    text-align: center;
+    padding-bottom: 40px;
 }
 
 .qual ol {
     margin-bottom: 0px;
+    list-style-type: none;
 }
 
-.qual h1 {
+.qual h1:first-child {
     color: var(--accenttext);
-    text-align: left;
+    font-family: var(--mainfont), sans-serif;
 }
 
 .work-item {
-    padding-bottom: 5px;
+    padding-bottom: 40px;
 }
 
 .work-item h1 {
@@ -152,6 +166,10 @@ h1 {
 
 .work-item h2 {
     color: var(--accenttext);
+}
+
+.section {
+    padding: 20px 0;
 }
 
 #img-h {
@@ -175,8 +193,24 @@ h1 {
     padding: 20px 0;
 }
 
+.skill {
+    color: var(--accenttext);
+    font-size: 1.1em;
+}
+
+.skill:after {
+    content: "–";
+    color: var(--mainback);
+}
+
+ul li {
+    padding: 3px 0;
+}
+
 .role {
     margin-bottom: 0;
+    font-family: var(--titlefont), serif;
+    color: var(--maintext);
 }
 
 .employer {
@@ -193,5 +227,5 @@ h1 {
 }
 
 .institution:before {
-    content: "TODO";
+    content: "—";
 }
