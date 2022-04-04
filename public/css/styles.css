@@ -17,6 +17,12 @@ body {
     text-align: justify;
 }
 
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    padding-top: 20px;
+}
+
 #header {
     font-family: var(--titlefont), serif;
     border-bottom: 2px solid white;
