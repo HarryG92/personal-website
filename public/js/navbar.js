@@ -44,8 +44,8 @@ function main(navlinks) {
         let navbar = document.createElement("div");
         navbar.id = "navbar";
 
-        for (let [key, value] of Object.entries(navlinks)) {
-            let button = createButton(key, value);
+        for (let navlink of navlinks) {
+            let button = createButton(navlink.name, navlink.request);
             navbar.appendChild(button);
         }
 
@@ -63,9 +63,9 @@ function main(navlinks) {
         let dropdown = document.createElement("div");
         dropdown.id = "dropdown";
 
-        for (const [key, value] of Object.entries(navlinks)) {
-            let button = createButton(key, value);
-            if (key === "Home" || value === currentPage) {
+        for (let navlink of navlinks) {
+            let button = createButton(navlink.name, navlink.request);
+            if (navlink.name === "Home" || navlink.path === currentPage) {
                 navbar.appendChild(button);
             } else {
                 dropdown.appendChild(button);
@@ -78,9 +78,9 @@ function main(navlinks) {
         document.body.insertBefore(navbar, document.body.childNodes[0]);
     }
 
-    function redirectFactory(value) {
+    function redirectFactory(path) {
         const redirect = function() {
-            window.location.href = value;
+            window.location.href = path;
         }
         return redirect;
     }

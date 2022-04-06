@@ -1,7 +1,32 @@
-{
-    "Home": "/",
-    "Qualifications": "quals",
-    "Work Experience": "work_experience",
-    "Technical Skills": "technical",
-    "Mathematics": "maths"
-}
+[
+    {
+        "name": "Home",
+        "title": "H Gulliver, PhD",
+        "request": "/",
+        "path": "index"
+    },
+    {
+        "name": "Qualifications",
+        "title": "Qualifications - H Gulliver",
+        "request": "/quals",
+        "path": "quals"
+    },
+    {
+        "name": "Work Experience",
+        "title": "Work Experience - H Gulliver",
+        "request": "/work_experience",
+        "path": "work_experience"
+    },
+    {
+        "name": "Technical Skills",
+        "title": "Technical Skills - H Gulliver",
+        "request": "/technical",
+        "path": "technical"
+    },
+    {
+        "name": "Maths",
+        "title": "Mathematics - H Gulliver",
+        "request": "/maths",
+        "path": "maths"
+    }
+]
