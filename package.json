@@ -4,7 +4,8 @@
   "description": "Code behind my personal website - currently under construction, not yet hosted\r Basic structure and styling now complete",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
