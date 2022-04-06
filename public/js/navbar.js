@@ -1,13 +1,3 @@
-// let navlinks = {
-//     "Home": "/",
-//     "Qualifications": "quals",
-//     "Work Experience": "work_experience",
-//     "Technical Skills": "technical",
-//     "Mathematics": "maths",
-//     // "Fencing": "fencing"
-// }
-
-// const navlinks = require('./../assets/navlinks.json');
 fetch('./../assets/navlinks.json')
     .then(
         (response) => {
