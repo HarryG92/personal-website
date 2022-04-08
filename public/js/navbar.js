@@ -17,20 +17,33 @@ function main(navlinks) {
     fitNavbar();
     window.addEventListener('resize', fitNavbar);
 
-    function fitNavbar(event) {
+    function removeOldNavbar() {
         let oldNavbar = document.getElementById("navbar");
         if (oldNavbar != null) {
             oldNavbar.remove();
         }
+    }
+
+    function fitNavbar(event) {
+        removeOldNavbar();
+
         let width = window.innerWidth;
-        if (width < 850) {
+        fullNavbar();
+
+        let actualWidth = 0;
+        let buttons = document.querySelectorAll("#navbar button");
+        for (let button of buttons) {
+            actualWidth += button.offsetWidth;
+        }
+
+        if (width < actualWidth) {
             condensedNavbar();
-        } else {
-            fullNavbar();
         }
     }
 
     function fullNavbar() {
+        removeOldNavbar();
+
         let navbar = document.createElement("div");
         navbar.id = "navbar";
 
@@ -43,6 +56,8 @@ function main(navlinks) {
     }
 
     function condensedNavbar() {
+        removeOldNavbar();
+        
         let navbar = document.createElement("div");
         navbar.id = "navbar";
 
