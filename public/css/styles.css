@@ -141,6 +141,11 @@ a:hover:not(.internal) {
 h1 {
     color: var(--accenttext);
     text-align: center;
+    padding: 0 5%;
+}
+
+h2 {
+    padding: 0 5%;
 }
 
 .qual-section {
@@ -183,6 +188,10 @@ h1 {
     padding: 20px 0;
 }
 
+p {
+    padding: 10px 5%;
+}
+
 #img-h {
     border-radius: 50%;
     margin: 20px 20px;
@@ -192,12 +201,16 @@ h1 {
     font-size: 3em;
     font-weight: bold;
     text-align: left;
-    padding-top: 20px;
+    padding: 20px 5%;
 }
 
 #about-me {
     text-align: center;
     font-size: 1.5em;
+}
+
+#about-me span {
+    padding: 5px 0;
 }
 
 #header {
@@ -239,8 +252,9 @@ ul li {
 
 .institution {
     font-size: 0.9em;
+    color: var(--accenttext);
 }
 
-.institution:before {
-    content: "—";
+#about-me span.institution {
+    padding-left: 10px;
 }
