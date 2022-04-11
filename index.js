@@ -20,7 +20,7 @@ app.get('/test/', (req, res) => {
     res.send('hello');
 });
 
-app.get('/.well-known/acme-challenge/2p-ol53T-ImJjGGiX8u2N-mPy4onQUWHBCKryNdXwZ0/', (req, res) => {
+app.get('/well-known/acme-challenge/2p-ol53T-ImJjGGiX8u2N-mPy4onQUWHBCKryNdXwZ0/', (req, res) => {
   res.send('2p-ol53T-ImJjGGiX8u2N-mPy4onQUWHBCKryNdXwZ0.B2A9TQe21ESfOvwSdA7VMNqa3FHm5NlKlzh5gH7i1No');
 });
 
