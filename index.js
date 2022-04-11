@@ -16,7 +16,7 @@ for (let navlink of navlinks) {
     });
 }
 
-app.get('/test/', (req, res) => {
+app.get('/.test/', (req, res) => {
     res.send('hello');
 });
 
